@@ -33,7 +33,10 @@ namespace Fast_Execution_Tool
 
         private void btnEditDock_Click(object sender, EventArgs e)
         {
-
+            // change form to EditDock
+            EditDockForm editDock = new EditDockForm();
+            editDock.Show();
+            this.Hide();
         }
     }
 }
