@@ -22,12 +22,12 @@ namespace Fast_Execution_Tool
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btnExecutionDock_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void btnEditDock_Click(object sender, EventArgs e)
         {
 
         }
