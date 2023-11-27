@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
 namespace Fast_Execution_Tool
 {
     public partial class StartingForm : Form
@@ -24,7 +25,10 @@ namespace Fast_Execution_Tool
 
         private void btnExecutionDock_Click(object sender, EventArgs e)
         {
-
+            // change form to ExecutionDock
+            ExecutionDockForm executionDock = new ExecutionDockForm();
+            executionDock.Show();
+            this.Hide();
         }
 
         private void btnEditDock_Click(object sender, EventArgs e)

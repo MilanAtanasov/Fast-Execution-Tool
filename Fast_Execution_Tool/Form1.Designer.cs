@@ -28,19 +28,34 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.lvExecutables = new System.Windows.Forms.ListView();
             this.SuspendLayout();
+            // 
+            // lvExecutables
+            // 
+            this.lvExecutables.HideSelection = false;
+            this.lvExecutables.Location = new System.Drawing.Point(12, 12);
+            this.lvExecutables.Name = "lvExecutables";
+            this.lvExecutables.Size = new System.Drawing.Size(679, 469);
+            this.lvExecutables.TabIndex = 0;
+            this.lvExecutables.UseCompatibleStateImageBehavior = false;
+            this.lvExecutables.SelectedIndexChanged += new System.EventHandler(this.lvExecutables_SelectedIndexChanged);
             // 
             // ExecutionDockForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(703, 493);
+            this.Controls.Add(this.lvExecutables);
             this.Name = "ExecutionDockForm";
             this.Text = "Execution Dock";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.ExecutionDockForm_FormClosed);
             this.ResumeLayout(false);
 
         }
 
         #endregion
+
+        private System.Windows.Forms.ListView lvExecutables;
     }
 }
