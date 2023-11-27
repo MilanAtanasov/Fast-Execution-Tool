@@ -10,11 +10,26 @@ using System.Windows.Forms;
 
 namespace Fast_Execution_Tool
 {
-    public partial class Form1 : Form
+    public partial class StartingForm : Form
     {
-        public Form1()
+        public StartingForm()
         {
             InitializeComponent();
+        }
+
+        private void StartingForm_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
