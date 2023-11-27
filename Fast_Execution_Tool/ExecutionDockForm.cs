@@ -16,5 +16,17 @@ namespace Fast_Execution_Tool
         {
             InitializeComponent();
         }
+
+        private void ExecutionDockForm_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ExecutionDockForm_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            // close this form and open the starting form
+            StartingForm startingForm = new StartingForm();
+            startingForm.Show();
+        }
     }
 }

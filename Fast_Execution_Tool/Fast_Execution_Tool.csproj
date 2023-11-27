@@ -58,9 +58,6 @@
     <Compile Include="ExecutionDockForm.Designer.cs">
       <DependentUpon>ExecutionDockForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form1.cs">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="StartingForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -69,6 +66,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="EditDockForm.resx">
+      <DependentUpon>EditDockForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExecutionDockForm.resx">
+      <DependentUpon>ExecutionDockForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="StartingForm.resx">
       <DependentUpon>StartingForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -93,6 +96,10 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="res\Icon.png" />
+    <Content Include="res\toolbox_sticker.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

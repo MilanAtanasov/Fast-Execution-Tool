@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(StartingForm));
             this.btnExecutionDock = new System.Windows.Forms.Button();
             this.btnEditDock = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -59,8 +60,16 @@
             this.ClientSize = new System.Drawing.Size(427, 226);
             this.Controls.Add(this.btnEditDock);
             this.Controls.Add(this.btnExecutionDock);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(443, 265);
+            this.MinimizeBox = false;
+            this.MinimumSize = new System.Drawing.Size(443, 265);
             this.Name = "StartingForm";
-            this.Text = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Starter Execution Dock Toolbox";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.StartingForm_FormClosed);
             this.Load += new System.EventHandler(this.StartingForm_Load);
             this.ResumeLayout(false);
 

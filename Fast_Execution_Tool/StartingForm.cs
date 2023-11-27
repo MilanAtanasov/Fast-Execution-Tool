@@ -38,5 +38,11 @@ namespace Fast_Execution_Tool
             editDock.Show();
             this.Hide();
         }
+
+        private void StartingForm_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            // close the application
+            Application.Exit();
+        }
     }
 }
