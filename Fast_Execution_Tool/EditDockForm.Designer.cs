@@ -53,6 +53,7 @@
             this.btnEditDockFormAdd.TabIndex = 1;
             this.btnEditDockFormAdd.Text = "Add Shortcut";
             this.btnEditDockFormAdd.UseVisualStyleBackColor = true;
+            this.btnEditDockFormAdd.Click += new System.EventHandler(this.btnEditDockFormAdd_Click);
             // 
             // btnEditDockFormDelete
             // 

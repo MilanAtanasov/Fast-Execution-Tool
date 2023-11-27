@@ -28,20 +28,20 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.tbAddShortcutPath = new System.Windows.Forms.TextBox();
             this.labelShortcutName = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.tbAddShortcutName = new System.Windows.Forms.TextBox();
             this.Path = new System.Windows.Forms.Button();
             this.btnAddSchortcutAdd = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // textBox1
+            // tbAddShortcutPath
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(12, 62);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(377, 30);
-            this.textBox1.TabIndex = 0;
+            this.tbAddShortcutPath.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbAddShortcutPath.Location = new System.Drawing.Point(12, 62);
+            this.tbAddShortcutPath.Name = "tbAddShortcutPath";
+            this.tbAddShortcutPath.Size = new System.Drawing.Size(377, 30);
+            this.tbAddShortcutPath.TabIndex = 0;
             // 
             // labelShortcutName
             // 
@@ -53,13 +53,13 @@
             this.labelShortcutName.TabIndex = 1;
             this.labelShortcutName.Text = "Shortcut Name";
             // 
-            // textBox2
+            // tbAddShortcutName
             // 
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(155, 14);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(317, 30);
-            this.textBox2.TabIndex = 2;
+            this.tbAddShortcutName.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbAddShortcutName.Location = new System.Drawing.Point(155, 14);
+            this.tbAddShortcutName.Name = "tbAddShortcutName";
+            this.tbAddShortcutName.Size = new System.Drawing.Size(317, 30);
+            this.tbAddShortcutName.TabIndex = 2;
             // 
             // Path
             // 
@@ -70,6 +70,7 @@
             this.Path.TabIndex = 3;
             this.Path.Text = "Path";
             this.Path.UseVisualStyleBackColor = true;
+            this.Path.Click += new System.EventHandler(this.Path_Click);
             // 
             // btnAddSchortcutAdd
             // 
@@ -80,6 +81,7 @@
             this.btnAddSchortcutAdd.TabIndex = 4;
             this.btnAddSchortcutAdd.Text = "Add";
             this.btnAddSchortcutAdd.UseVisualStyleBackColor = true;
+            this.btnAddSchortcutAdd.Click += new System.EventHandler(this.btnAddSchortcutAdd_Click);
             // 
             // AddShortcutForm
             // 
@@ -88,9 +90,9 @@
             this.ClientSize = new System.Drawing.Size(506, 144);
             this.Controls.Add(this.btnAddSchortcutAdd);
             this.Controls.Add(this.Path);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.tbAddShortcutName);
             this.Controls.Add(this.labelShortcutName);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.tbAddShortcutPath);
             this.Name = "AddShortcutForm";
             this.Text = "AddShortcutForm";
             this.ResumeLayout(false);
@@ -100,9 +102,9 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox tbAddShortcutPath;
         private System.Windows.Forms.Label labelShortcutName;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox tbAddShortcutName;
         private System.Windows.Forms.Button Path;
         private System.Windows.Forms.Button btnAddSchortcutAdd;
     }

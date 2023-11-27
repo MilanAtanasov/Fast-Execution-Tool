@@ -80,5 +80,12 @@ namespace Fast_Execution_Tool
         {
 
         }
+
+        private void btnEditDockFormAdd_Click(object sender, EventArgs e)
+        {
+            // open AddShortcutForm
+            AddShortcutForm addShortcutForm = new AddShortcutForm();
+            addShortcutForm.Show();
+        }
     }
 }
