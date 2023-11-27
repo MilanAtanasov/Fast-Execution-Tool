@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddShortcutForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddShortcutForm.Designer.cs">
+      <DependentUpon>AddShortcutForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="EditDockForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -66,6 +72,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AddShortcutForm.resx">
+      <DependentUpon>AddShortcutForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="EditDockForm.resx">
       <DependentUpon>EditDockForm.cs</DependentUpon>
     </EmbeddedResource>
