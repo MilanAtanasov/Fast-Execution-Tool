@@ -46,7 +46,6 @@ namespace Fast_Execution_Tool
             return tbAddShortcutPath.Text;
         }
 
-
         private void Path_Click(object sender, EventArgs e)
         {
             // open file dialog to select the path of the shortcut, and pass it to the tbAddShortcutPath textbox
