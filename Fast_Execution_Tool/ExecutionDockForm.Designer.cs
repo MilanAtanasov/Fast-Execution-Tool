@@ -1,6 +1,6 @@
 ﻿namespace Fast_Execution_Tool
 {
-    partial class Form1
+    partial class ExecutionDockForm
     {
         /// <summary>
         /// Required designer variable.
@@ -28,15 +28,19 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ExecutionDockForm));
             this.SuspendLayout();
             // 
-            // Form1
+            // ExecutionDockForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(425, 482);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Name = "ExecutionDockForm";
+            this.Text = "ExecutionDockForm";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.ExecutionDockForm_FormClosed);
+            this.Load += new System.EventHandler(this.ExecutionDockForm_Load);
             this.ResumeLayout(false);
 
         }
@@ -44,4 +48,3 @@
         #endregion
     }
 }
-
