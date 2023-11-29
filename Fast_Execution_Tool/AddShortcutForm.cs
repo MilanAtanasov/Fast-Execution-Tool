@@ -19,10 +19,15 @@ namespace Fast_Execution_Tool
 
         private void btnAddSchortcutAdd_Click(object sender, EventArgs e)
         {
-            // add shortcut to config file as a new line with the format:
-            // shortcutName;shortcutPath; (semicolon as separator) 
-            // and close the form
-            ConfigElements.Instance.addShortcut(getShortcutName(), getShortcutPath());
+            
+            // get the shortcut name and path
+            String shortcutName = getShortcutName();
+            String shortcutPath = getShortcutPath();
+            String profile = getComboBoxProfile();
+            // update the config file
+
+            configFileMethods.updateConfig(profile, shortcutName, shortcutPath);
+            // close the form            
             this.Close();
         }
 
@@ -40,6 +45,12 @@ namespace Fast_Execution_Tool
             return tbAddShortcutPath.Text;
         }
 
+        private String getComboBoxProfile()
+        {
+            // get the profile from the comboBoxProfiles
+            return comboBoxProfiles.Text;
+        }
+
         private void Path_Click(object sender, EventArgs e)
         {
             // open file dialog to select the path of the shortcut, and pass it to the tbAddShortcutPath textbox
@@ -48,6 +59,21 @@ namespace Fast_Execution_Tool
             openFileDialog.Title = "Select the path of the shortcut";
             openFileDialog.ShowDialog();
             tbAddShortcutPath.Text = openFileDialog.FileName;
+        }
+
+        private void tableLayoutPanelAddShortcutForm_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void comboBoxProfiles_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

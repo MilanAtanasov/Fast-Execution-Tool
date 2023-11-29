@@ -73,7 +73,8 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="utilClass.cs" />
+    <Compile Include="configFileMethods.cs" />
+    <Compile Include="viewElementsMethods.cs" />
     <EmbeddedResource Include="AddShortcutForm.resx">
       <DependentUpon>AddShortcutForm.cs</DependentUpon>
     </EmbeddedResource>
