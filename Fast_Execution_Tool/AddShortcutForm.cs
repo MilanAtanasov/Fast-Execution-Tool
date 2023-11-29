@@ -26,7 +26,9 @@ namespace Fast_Execution_Tool
             String profile = getComboBoxProfile();
             // update the config file
 
-            configFileMethods.updateConfig(profile, shortcutName, shortcutPath);
+            
+            //dataXML.GetInstance().addShortcut(shortcutName, shortcutPath, profile);
+
             // close the form            
             this.Close();
         }

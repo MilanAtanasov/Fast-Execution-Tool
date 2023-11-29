@@ -13,7 +13,7 @@ namespace Fast_Execution_Tool
         {
             try
             {
-                List<String> profiles = configFileMethods.getProfiles();
+                List<String> profiles = dataXML.GetInstance().getProfileNames();
                 MessageBox.Show("Profiles: " + profiles.Count);
                 foreach (String profile in profiles)
                 {

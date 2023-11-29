@@ -23,7 +23,7 @@ namespace Fast_Execution_Tool
             // change form to StartingForm
             StartingForm startingForm = new StartingForm();
             startingForm.Show();
-            ConfigElements.Instance.UpdateConfig();
+            //ConfigElements.Instance.UpdateConfig();
         }
 
         private void btnEditDockFormDown_Click(object sender, EventArgs e)

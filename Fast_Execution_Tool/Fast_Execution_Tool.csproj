@@ -52,6 +52,7 @@
     <Compile Include="AddShortcutForm.Designer.cs">
       <DependentUpon>AddShortcutForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="dataXML.cs" />
     <Compile Include="EditDockForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -64,7 +65,8 @@
     <Compile Include="ExecutionDockForm.Designer.cs">
       <DependentUpon>ExecutionDockForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="ConfigElements.cs" />
+    <Compile Include="shortcut.cs" />
+    <Compile Include="shortcutsProfile.cs" />
     <Compile Include="StartingForm.cs">
       <SubType>Form</SubType>
     </Compile>
