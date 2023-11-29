@@ -64,7 +64,7 @@
     <Compile Include="ExecutionDockForm.Designer.cs">
       <DependentUpon>ExecutionDockForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="shortcutsBox.cs" />
+    <Compile Include="ConfigElements.cs" />
     <Compile Include="StartingForm.cs">
       <SubType>Form</SubType>
     </Compile>

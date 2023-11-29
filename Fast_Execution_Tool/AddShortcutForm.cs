@@ -22,17 +22,11 @@ namespace Fast_Execution_Tool
             // add shortcut to config file as a new line with the format:
             // shortcutName;shortcutPath; (semicolon as separator) 
             // and close the form
-            addShortcut();
+            ConfigElements.Instance.addShortcut(getShortcutName(), getShortcutPath());
             this.Close();
         }
 
-        private void addShortcut()
-        {
-            // add shortcut to config file as a new line with the format:
-            // shortcutName;shortcutPath; (semicolon as separator) 
-            // and close the form
-            System.IO.File.AppendAllText(System.IO.Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().Location) + "\\configExecutionTool.txt", getShortcutName() + ";" + getShortcutPath() + ";"+"\n");
-        }
+        
 
         private String getShortcutName()
         {

@@ -16,6 +16,7 @@ namespace Fast_Execution_Tool
         public StartingForm()
         {
             InitializeComponent();
+            ConfigElements.Instance.UpdateConfig();
         }
 
         private void StartingForm_Load(object sender, EventArgs e)
